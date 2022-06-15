@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'item-1 item-1 item-2'
+    'item-3 item-4 item-4'
+    ;
+    border-radius: 10px;
+}
+
+main > div {
+    padding: 100px;
+}
+header{
+    margin-top: 50px;
+} 
+
+a{
+    text-decoration: none;
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    background-color: black;
+}
+
+a:hover{
+    background-color: rgb(48, 43, 43);
+} 
+.item-1{
+    background-color: blueviolet;
+    grid-area: item-1;
+}
+
+.item-2{
+    background-color: brown;
+    grid-area: item-2;
+}
+
+.item-3{
+    background-color: rgba(0, 38, 255, 0.507);
+    grid-area: item-3;
+}
+
+.item-4{
+    grid-area: item-4;
+    padding: 0px;
+    display: grid;
+    gap: 10px;
+}
+.item-4 div{
+    background-color: rgb(168, 33, 157);
+}
